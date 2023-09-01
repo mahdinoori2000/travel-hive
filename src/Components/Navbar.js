@@ -5,9 +5,9 @@ import logo from './images/travel-hive-logo.PNG';
 export default function Navbar() {
   return (
     <>
-      <nav>
-        <NavLink to="/"><img src={logo} alt="Logo" /></NavLink>
-        <ul>
+      <nav className="navbar">
+        <NavLink to="/"><img src={logo} alt="Logo" className="logo" /></NavLink>
+        <ul className="navbar-items">
           <li><NavLink to="/">Home</NavLink></li>
           <li><NavLink to="/destination">Destination</NavLink></li>
           <li><NavLink to="/service">Service</NavLink></li>
@@ -15,9 +15,9 @@ export default function Navbar() {
           <li><NavLink to="/page">Page</NavLink></li>
           <li><NavLink to="/contact">Contact</NavLink></li>
         </ul>
-        <div>
-          <button type="button">Sign In</button>
-          <button type="button">Sign Up</button>
+        <div className="login">
+          <NavLink to="/sign-in">Sign In</NavLink>
+          <NavLink to="/sign-up">Sign Up</NavLink>
         </div>
       </nav>
     </>
