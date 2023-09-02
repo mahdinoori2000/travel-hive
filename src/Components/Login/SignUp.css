@@ -27,12 +27,14 @@
     margin-bottom: 20px;
 }
 .header {
-    font-size: 36px;
+    font-size: 24px;
+    text-align: left;
 }
 .details-desc {
     font-size: 12px;
     font-weight: 600;
     margin-bottom: 20px;
+    text-align: left;
 }
 .sign-in-form {
     display: flex;
@@ -105,7 +107,7 @@
     text-decoration: none;
 }
 .sign-in-image {
-    height: 85vh;
+    height: 90vh;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
