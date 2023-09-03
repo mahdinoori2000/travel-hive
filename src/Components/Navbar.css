@@ -19,6 +19,29 @@
     font-size: 14px;
     text-decoration: none;
     color: #111;    
+    position: relative;
+}
+.navbar-items li a::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    background-color: #1c7ed6;
+    transition: 0.3s;
+}
+.navbar-items li a:hover::after {
+    width: 100%;
+  }
+.navbar-items li a.active::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: -5px;
+    background-color: #1c7ed6;
 }
 .login {
     display: flex;
