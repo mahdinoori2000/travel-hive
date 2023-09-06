@@ -1,3 +1,9 @@
+import Headline from './Home/Headline';
+
 export default function Home() {
-  return <h2>Home, Under Constraction</h2>;
+  return (
+    <div>
+      <Headline />
+    </div>
+  );
 }
