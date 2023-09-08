@@ -14,21 +14,21 @@ const backgroundImage = {
 };
 export default function SignIn() {
   return (
-    <div className="container" style={backgroundImage}>
-      <div className="sub-container">
-        <div className="detials">
-          <img src={logo} alt="Logo" className="logo" />
-          <h2 className="header">Welcome</h2>
-          <p className="details-desc">Log in or Create Account to countries</p>
-          <form className="sign-in-form">
-            <label htmlFor="email" className="label">Email</label>
-            <input type="text" name="email" className="input-form" placeholder="Enter your Email" />
-            <label htmlFor="password" className="label">Password</label>
-            <input type="password" name="password" className="input-form" placeholder="Enter your Password" />
-            <button type="submit" className="submit-btn">Log In</button>
+    <div className="sign-in-container" style={backgroundImage}>
+      <div className="sign-in-sub-container">
+        <div className="sign-in-detials">
+          <img src={logo} alt="Logo" className="sign-in-logo" />
+          <h2 className="sign-in-header">Welcome</h2>
+          <p className="sign-in-details-desc">Log in or Create Account to countries</p>
+          <form className="sign-in-sign-in-form">
+            <label htmlFor="email" className="sign-in-label">Email</label>
+            <input type="text" name="email" className="sign-in-input-form" placeholder="Enter your Email" />
+            <label htmlFor="password" className="sign-in-label">Password</label>
+            <input type="password" name="password" className="sign-in-input-form" placeholder="Enter your Password" />
+            <button type="submit" className="sign-in-submit-btn">Log In</button>
           </form>
-          <p className="or">or</p>
-          <ul className="social-media">
+          <p className="sign-in-or">or</p>
+          <ul className="sign-in-social-media">
             <li>
               <img src={facebookLogo} alt="facebook" />
               facebook
@@ -43,14 +43,14 @@ export default function SignIn() {
               Twitter
             </li>
           </ul>
-          <a href="#home" className="forgot-password">Forget password</a>
-          <p className="sign-up">
+          <a href="#home" className="sign-in-forgot-password">Forget password</a>
+          <p className="sign-in-sign-up">
             Didn&apos;t have Account?
             {' '}
             <a href="sign-up">Sign Up here</a>
           </p>
         </div>
-        <img src={logoPicture} className="sign-in-image" alt="Travel place" />
+        <img src={logoPicture} className="sign-in-sign-in-image" alt="Travel place" />
       </div>
     </div>
   );

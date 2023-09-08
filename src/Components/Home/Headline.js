@@ -1,9 +1,9 @@
-import './Headline.css';
 import background from '../images/snow-landscape.jpg';
+import classes from './Headline.module.css';
 
 export default function Headline() {
   return (
-    <div className="container" style={{ backgroundImage: `url(${background})` }}>
+    <div className={classes.container} style={{ backgroundImage: `url(${background})` }}>
       <h1>
         Discover A Beatiful
         {' '}
@@ -18,6 +18,7 @@ export default function Headline() {
 
       </p>
       <button type="button">Explore Now</button>
+      <div className={classes.booking}>content</div>
     </div>
   );
 }

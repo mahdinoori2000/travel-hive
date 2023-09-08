@@ -1,16 +1,15 @@
-
-.container {
+.sign-in-container {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.sub-container {
+.sign-in-sub-container {
   display: flex;
 }
 
-.detials {
+.sign-in-detials {
   background-color: #fff;
   width: 450px;
   align-items: flex-start;
@@ -19,7 +18,7 @@
   border-bottom-left-radius: 10px;
 }
 
-.logo {
+.sign-in-logo {
   height: 32px;
   display: flex;
   justify-content: left;
@@ -27,29 +26,29 @@
   margin-bottom: 20px;
 }
 
-.header {
+.sign-in-header {
   font-size: 36px;
 }
 
-.details-desc {
+.sign-in-details-desc {
   font-size: 12px;
   font-weight: 600;
   margin-bottom: 20px;
 }
 
-.sign-in-form {
+.sign-in-sign-in-form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.label {
+.sign-in-label {
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 5px;
 }
 
-.input-form {
+.sign-in-input-form {
   background-color: #e9ecef;
   border: none;
   outline: none;
@@ -60,7 +59,7 @@
   margin-bottom: 15px;
 }
 
-.submit-btn {
+.sign-in-submit-btn {
   width: 100%;
   height: 40px;
   border: none;
@@ -71,16 +70,16 @@
   margin-bottom: 5px;
 }
 
-.submit-btn:hover {
+.sign-in-submit-btn:hover {
   background-color: #304da3;
 }
 
-.or {
+.sign-in-or {
   font-size: 12px;
   margin-bottom: 10px;
 }
 
-.social-media {
+.sign-in-social-media {
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -88,7 +87,7 @@
   margin-bottom: 5px;
 }
 
-.social-media li {
+.sign-in-social-media li {
   font-weight: 600;
   display: flex;
   align-items: center;
@@ -99,27 +98,27 @@
   cursor: pointer;
 }
 
-.social-media li img {
+.sign-in-social-media li img {
   width: 32px;
 }
 
-.forgot-password {
+.sign-in-forgot-password {
   color: #4dabf7;
   font-size: 12px;
   text-decoration: none;
 }
 
-.sign-up {
+.sign-in-sign-up {
   font-size: 12px;
   margin-top: 10px;
 }
 
-.sign-up a {
+.sign-in-sign-up a {
   color: #4dabf7;
   text-decoration: none;
 }
 
-.sign-in-image {
+.sign-in-sign-in-image {
   height: 85vh;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
