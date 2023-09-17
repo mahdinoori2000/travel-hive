@@ -1,3 +1,4 @@
+import BookinsgList from './BookingList';
 import background from '../images/snow-landscape.jpg';
 import classes from './Headline.module.css';
 
@@ -17,8 +18,8 @@ export default function Headline() {
         destination in the world with us
 
       </p>
-      <button type="button">Explore Now</button>
-      <div className={classes.booking}>content</div>
+      <button type="button" className={classes.ctaBtn}>Explore Now</button>
+      <BookinsgList />
     </div>
   );
 }
