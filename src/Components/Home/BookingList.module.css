@@ -1,0 +1,104 @@
+.booking {
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    position: absolute;
+    width: 80%;
+    height: 150px;
+    bottom: -25%;
+    border-radius: 15px;
+    transform: translateY(-50%);
+    z-index: 2;
+    color: #333;
+}
+.bookingList {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    border-bottom: 0.1px solid #ddd;
+  padding-bottom: 20px;
+  padding: 20px 0 20px 20px;
+}
+.bookingList li {
+    position: relative;
+}
+.bookingList li button {
+    background: none;
+    color: #999;
+    border: none;
+    cursor: pointer
+}
+.bookingList li button:hover,
+.bookingList li button:active {
+    color: #555;
+}
+
+.bookingList li button::after {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -21px;
+  background-color: #555;
+  transition: 0.3s;
+}
+.bookingList li button:hover::after {
+    width: 100%;
+}
+.bookingList li button.active {
+    color: #555;
+}
+.bookingList li button.active::after {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  left: 0;
+  bottom: -21px;
+  background-color: #555;
+}
+
+/* BOOKING FORM  */
+.bookingForm {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.bookingForm button {
+    color: #fff;
+    border: none;
+    background: none;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: #3a5ecd;
+    margin-left: -100px;
+}
+.bookingFormContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.bookingFormDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.bookingFormDetails label {
+    color: #333;    
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.bookingFormDetails input {
+    border: none;
+    outline: none;
+}
+.bookingFormDetails input[type="date"] {
+    color: #555;    
+}
+.bookingFormDetails input::placeholder {
+    color: #999;
+}

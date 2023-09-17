@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
-import { CiLocationOn } from 'react-icons/ci';
+import { CiLocationOn, CiSearch } from 'react-icons/ci';
 import { RxCalendar } from 'react-icons/rx';
 import { IoPersonOutline } from 'react-icons/io5';
 import classes from './BookingList.module.css';
@@ -31,6 +31,7 @@ function Stays() {
       <FlightBooking icon={<RxCalendar />} forLabel="" label="Check In" type="date" placeholder="Add date" id="" />
       <FlightBooking icon={<RxCalendar />} forLabel="" label="Check Out" type="date" placeholder="Add date" id="" />
       <FlightBooking icon={<IoPersonOutline />} forLabel="" label="Guest" type="number" placeholder="Add Guest" id="" />
+      <button type="submit" aria-label="Search"><CiSearch /></button>
     </form>
 
   );
