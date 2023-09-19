@@ -36,6 +36,19 @@ function Stays() {
 
   );
 }
+
+function Flights() {
+  return (
+    <form className={classes.bookingForm}>
+      <FlightBooking icon={<CiLocationOn />} forLabel="" label="Location" type="text" placeholder="Leaving From?" id="" />
+      <FlightBooking icon={<CiLocationOn />} forLabel="" label="Location" type="text" placeholder="Going to" id="" />
+      <FlightBooking icon={<RxCalendar />} forLabel="" label="Date" type="date" placeholder="Add date" id="" />
+      <FlightBooking icon={<IoPersonOutline />} forLabel="" label="Passenger" type="number" placeholder="Passenger Number" id="" />
+      <button type="submit" aria-label="Search"><CiSearch /></button>
+    </form>
+  );
+}
+
 function FlightBooking({
   icon, label, forLabel, type, placeholder, id,
 }) {
@@ -58,12 +71,25 @@ FlightBooking.propTypes = {
   id: PropTypes.string.isRequired,
 };
 
-function Flights() {
-  return <p>Flights Under Construction</p>;
-}
 function Cars() {
-  return <p>Cars Under Construction</p>;
+  return (
+    <form className={classes.bookingForm}>
+      <FlightBooking icon={<CiLocationOn />} forLabel="" label="Location" type="text" placeholder="Pick up Location" id="" />
+      <FlightBooking icon={<RxCalendar />} forLabel="" label="Pick-up date" type="date" placeholder="Pick up date" id="" />
+      <FlightBooking icon={<RxCalendar />} forLabel="" label="Drop-off date" type="date" placeholder="Add date" id="" />
+      <FlightBooking icon={<IoPersonOutline />} forLabel="" label="Passenger" type="number" placeholder="Number of cars" className={classes.typeNumber} />
+      <button type="submit" aria-label="Search"><CiSearch /></button>
+    </form>
+  );
 }
 function Cruise() {
-  return <p>Cruise Under Construction</p>;
+  return (
+    <form className={classes.bookingForm}>
+      <FlightBooking icon={<CiLocationOn />} forLabel="" label="Destination" type="text" placeholder="Where you want to go?" id="" />
+      <FlightBooking icon={<RxCalendar />} forLabel="" label="Start date" type="date" placeholder="Pick up date" id="" />
+      <FlightBooking icon={<RxCalendar />} forLabel="" label="End date" type="date" placeholder="Add date" id="" />
+      <FlightBooking icon={<IoPersonOutline />} forLabel="" label="Duration (night)" type="number" placeholder="Duration" className={classes.typeNumber} />
+      <button type="submit" aria-label="Search"><CiSearch /></button>
+    </form>
+  );
 }
