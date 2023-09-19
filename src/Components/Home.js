@@ -1,4 +1,4 @@
-import Headline from './Home/Headline';
+import Headline from './Home/Headline/Headline';
 
 export default function Home() {
   return (

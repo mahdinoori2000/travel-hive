@@ -1,5 +1,5 @@
 import BookinsgList from './BookingList';
-import background from '../images/snow-landscape.jpg';
+import background from '../../images/snow-landscape.jpg';
 import classes from './Headline.module.css';
 
 export default function Headline() {
