@@ -1,35 +1,49 @@
 .booking {
-    background-color: #fff;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    position: absolute;
-    width: 80%;
-    height: 150px;
-    bottom: -25%;
-    border-radius: 15px;
-    transform: translateY(-50%);
-    z-index: 2;
-    color: #333;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  position: absolute;
+  width: 80%;
+  height: 150px;
+  bottom: -25%;
+  border-radius: 15px;
+  transform: translateY(-50%);
+  z-index: 2;
+  color: #333;
 }
+
 .bookingList {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    border-bottom: 0.1px solid #ddd;
-  padding-bottom: 20px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  border-bottom: 0.1px solid #ddd;
   padding: 20px 0 20px 20px;
 }
+
 .bookingList li {
-    position: relative;
+  position: relative;
 }
+
+.bookingForm button {
+  color: #fff;
+  border: none;
+  background: none;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 50%;
+  background-color: #3a5ecd;
+  margin-left: -100px;
+}
+
 .bookingList li button {
-    background: none;
-    color: #999;
-    border: none;
-    cursor: pointer
+  background: none;
+  color: #999;
+  border: none;
+  cursor: pointer;
 }
+
 .bookingList li button:hover,
 .bookingList li button:active {
-    color: #555;
+  color: #555;
 }
 
 .bookingList li button::after {
@@ -42,12 +56,15 @@
   background-color: #555;
   transition: 0.3s;
 }
+
 .bookingList li button:hover::after {
-    width: 100%;
+  width: 100%;
 }
+
 .bookingList li button.active {
-    color: #555;
+  color: #555;
 }
+
 .bookingList li button.active::after {
   content: '';
   position: absolute;
@@ -60,18 +77,8 @@
 
 /* BOOKING FORM  */
 .bookingForm {
-    height: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-.bookingForm button {
-    color: #fff;
-    border: none;
-    background: none;
-    padding: 10px;
-    font-size: 20px;
-    border-radius: 50%;
-    background-color: #3a5ecd;
-    margin-left: -100px;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }

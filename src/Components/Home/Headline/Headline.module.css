@@ -47,6 +47,7 @@
   cursor: pointer;
   z-index: 2;
 }
+
 .ctaBtn:hover {
   background-color: #fcc419;
 }
