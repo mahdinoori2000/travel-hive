@@ -1,0 +1,32 @@
+.bookingFormContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bookingFormDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.bookingFormDetails label {
+  color: #333;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.bookingFormDetails input {
+  border: none;
+  outline: none;
+}
+
+.bookingFormDetails input[type="date"] {
+  color: #555;
+}
+
+.bookingFormDetails input::placeholder {
+  color: #999;
+}
