@@ -10,8 +10,8 @@ import { NavLink } from 'react-router-dom';
 
 export default function MobileNav() {
   const [openNav, setOpenNav] = useState(false);
-  document.addEventListener('mousedown', () => setOpenNav(false));
   if (openNav) {
+    // document.addEventListener('mousedown', () => setOpenNav(false));
     return (
       <div className="absolute left-0 top-0 z-10 w-[200px] bg-slate-500 ">
         <button type="button" onClick={() => setOpenNav(false)}>
@@ -21,58 +21,42 @@ export default function MobileNav() {
           <li className="flex items-center">
             <NavLink to="/">
               <AiOutlineHome />
-              {' '}
               <span>Home</span>
             </NavLink>
           </li>
-          <li className="flex items-center">
-            <NavLink to="/">
+          <li>
+            <NavLink to="/destination" className="flex items-center">
               <FaSuitcaseRolling />
-              {' '}
               <span>Destination</span>
             </NavLink>
-
           </li>
           <li className="flex items-center">
-            <NavLink to="/">
-
+            <NavLink to="/service">
               <CiRollingSuitcase />
-              {' '}
               <span>Service</span>
             </NavLink>
-
           </li>
           <li className="flex items-center">
-            <NavLink to="/">
-
+            <NavLink to="/blog">
               <FaRegNewspaper />
-              {' '}
               <span>Blog</span>
             </NavLink>
-
           </li>
           <li className="flex items-center">
-            <NavLink to="/">
-
+            <NavLink to="/page">
               <GrDocumentText />
-              {' '}
               <span>Page</span>
             </NavLink>
-
           </li>
           <li className="flex items-center">
-            <NavLink to="/">
-
+            <NavLink to="/contact">
               <AiOutlineContacts />
-              {' '}
               <span>Contact</span>
             </NavLink>
-
           </li>
           <li className="flex items-center">
-            <NavLink to="/">
+            <NavLink to="/sign-in">
               <AiOutlineLogin />
-              {' '}
               <span>Sign in</span>
             </NavLink>
           </li>
