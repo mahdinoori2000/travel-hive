@@ -6,6 +6,7 @@ import { GrDocumentText } from 'react-icons/gr';
 import {
   AiOutlineClose, AiOutlineHome, AiOutlineLogin, AiOutlineContacts,
 } from 'react-icons/ai';
+import { NavLink } from 'react-router-dom';
 
 export default function MobileNav() {
   const [openNav, setOpenNav] = useState(false);
@@ -18,39 +19,62 @@ export default function MobileNav() {
         </button>
         <ul>
           <li className="flex items-center">
-            <AiOutlineHome />
-            {' '}
-            <span>Home</span>
+            <NavLink to="/">
+              <AiOutlineHome />
+              {' '}
+              <span>Home</span>
+            </NavLink>
           </li>
           <li className="flex items-center">
-            <FaSuitcaseRolling />
-            {' '}
-            <span>Destination</span>
+            <NavLink to="/">
+              <FaSuitcaseRolling />
+              {' '}
+              <span>Destination</span>
+            </NavLink>
+
           </li>
           <li className="flex items-center">
-            <CiRollingSuitcase />
-            {' '}
-            <span>Service</span>
+            <NavLink to="/">
+
+              <CiRollingSuitcase />
+              {' '}
+              <span>Service</span>
+            </NavLink>
+
           </li>
           <li className="flex items-center">
-            <FaRegNewspaper />
-            {' '}
-            <span>Blog</span>
+            <NavLink to="/">
+
+              <FaRegNewspaper />
+              {' '}
+              <span>Blog</span>
+            </NavLink>
+
           </li>
           <li className="flex items-center">
-            <GrDocumentText />
-            {' '}
-            <span>Page</span>
+            <NavLink to="/">
+
+              <GrDocumentText />
+              {' '}
+              <span>Page</span>
+            </NavLink>
+
           </li>
           <li className="flex items-center">
-            <AiOutlineContacts />
-            {' '}
-            <span>Contact</span>
+            <NavLink to="/">
+
+              <AiOutlineContacts />
+              {' '}
+              <span>Contact</span>
+            </NavLink>
+
           </li>
           <li className="flex items-center">
-            <AiOutlineLogin />
-            {' '}
-            <span>Sign in</span>
+            <NavLink to="/">
+              <AiOutlineLogin />
+              {' '}
+              <span>Sign in</span>
+            </NavLink>
           </li>
         </ul>
       </div>
