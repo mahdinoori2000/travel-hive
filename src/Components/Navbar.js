@@ -1,25 +1,29 @@
-import { NavLink } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 import './Navbar.css';
-import logo from './images/travel-hive-logo.PNG';
+// import { NavLink } from 'react-router-dom';
+// import { GiHamburgerMenu } from 'react-icons/gi';
+// import logo from './images/travel-hive-logo.PNG';
+import MobileNav from './MobileNav';
+import DesktopNav from './DesktopNav';
 
 export default function Navbar() {
+  const [mobileScreenSize, setMobileScreenSize] = useState(window.innerWidth < 900);
+
+  useEffect(() => {
+    function handleResize() {
+      setMobileScreenSize(window.innerWidth < 900);
+    }
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <>
-      <nav className="navbar">
-        <NavLink to="/"><img src={logo} alt="Logo" className="logo" /></NavLink>
-        <ul className="navbar-items">
-          <li><NavLink to="/">Home</NavLink></li>
-          <li><NavLink to="/destination">Destination</NavLink></li>
-          <li><NavLink to="/service">Service</NavLink></li>
-          <li><NavLink to="/blog">Blog</NavLink></li>
-          <li><NavLink to="/page">Page</NavLink></li>
-          <li><NavLink to="/contact">Contact</NavLink></li>
-        </ul>
-        <div className="login">
-          <NavLink to="/sign-in">Sign In</NavLink>
-          <NavLink to="/sign-up">Sign Up</NavLink>
-        </div>
-      </nav>
+      {mobileScreenSize ? <MobileNav /> : <DesktopNav />}
     </>
   );
 }
